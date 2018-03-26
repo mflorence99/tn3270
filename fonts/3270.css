@@ -1,0 +1,11 @@
+@font-face {
+  font-family: '3270 Font';
+  font-style: normal;
+  font-weight: 500;
+  src: url("3270Medium.ttf") format("truetype");
+}
+
+.tn3270 {
+  font-family: '3270 Font';
+  font-weight: 500;
+}
