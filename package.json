@@ -1,0 +1,33 @@
+{
+  "name": "tn3270",
+  "description": "Pure TypeScript 3270 emulation via Telnet for Node.js",
+  "author": {
+    "name": "Mark Florence",
+    "email": "mflo999@gmail.com"
+  },
+  "version": "0.0.1",
+  "main": "./lib/index.js",
+  "engine": "node >= 6.9.1",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^5.5.7"
+  },
+  "devDependencies": {
+    "@types/node": "^9.6.0",
+    "eslint": "^4.19.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test-convert": "tsc && node lib/convert.spec.js",
+    "test-data-stream": "tsc && node lib/data-stream.spec.js",
+    "test-tn3270": "tsc && node lib/tn3270.spec.js",
+    "test-lu3270": "tsc && node lib/lu3270.spec.js",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mflorence99/node-tn3270"
+  }
+}

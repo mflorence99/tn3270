@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "lib": ["es2015"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "outDir": "lib",
+    "removeComments": true,
+    "rootDir": "src",
+    "strictNullChecks": true,
+    "target": "es5"
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
