@@ -161,6 +161,17 @@ export function addressToBytes(address: number): Uint8Array {
 }
 
 /**
+ * Simple map reversal
+ */
+
+export function reverseMap(obj: any): any {
+  return Object.keys(obj).reduce((acc, k) => {
+    acc[String(obj[k])] = k;
+    return acc;
+  }, {});
+}
+
+/**
  * Common types
  */
 
@@ -241,12 +252,14 @@ export enum Order {
 export enum Telnet {
   BINARY        = 0,
   DO            = 253,
+  DONT          = 254,
   EOR           = 25,
   IAC           = 255,
   SB            = 250,
   SE            = 240,
   TERMINAL_TYPE = 24,
-  WILL          = 251
+  WILL          = 251,
+  WONT          = 252
 }
 
 export enum TypeCode {

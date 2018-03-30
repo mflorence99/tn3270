@@ -6,7 +6,6 @@ export declare class Tn3270 {
     model: string;
     stream$: Observable<Buffer>;
     private socket;
-    private modelBytes;
     constructor(host: string, port: number, model: string);
     write(bytes: any): void;
     private dataHandler(data, observer);

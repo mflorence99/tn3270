@@ -10,6 +10,7 @@
   "engine": "node >= 6.9.1",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^2.3.2",
     "rxjs": "^5.5.7"
   },
   "devDependencies": {

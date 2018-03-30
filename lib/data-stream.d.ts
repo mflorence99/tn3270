@@ -30,6 +30,7 @@ export declare class WCC {
 }
 export declare function addressFromBytes(bytes: Uint8Array): number;
 export declare function addressToBytes(address: number): Uint8Array;
+export declare function reverseMap(obj: any): any;
 export declare enum AID {
     DEFAULT = 136,
     CLEAR = 109,
@@ -102,12 +103,14 @@ export declare enum Order {
 export declare enum Telnet {
     BINARY = 0,
     DO = 253,
+    DONT = 254,
     EOR = 25,
     IAC = 255,
     SB = 250,
     SE = 240,
     TERMINAL_TYPE = 24,
     WILL = 251,
+    WONT = 252,
 }
 export declare enum TypeCode {
     BASIC = 192,
