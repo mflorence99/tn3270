@@ -41,7 +41,7 @@ export class Tn3270 {
       this.socket.connect({host, port}, () => {
         console.log(chalk.green('3270 -> HOST'), chalk.blue(`Connected at ${host}:${port}`));
       });
-      return () => this.socket.destroy();
+      return () => this.socket.end();
     });
   }
 
