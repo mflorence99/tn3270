@@ -29,8 +29,14 @@ export class Tn3270 {
     this.stream$ = Observable.create((observer: Observer<Buffer>) => {
       this.socket = new net.Socket();
       this.socket.on('data', (data: Buffer) => this.dataHandler(data, observer));
-      this.socket.on('error', (error: Error) => observer.error(error));
-      this.socket.on('end', () => observer.complete());
+      this.socket.on('error', (error: Error) => {
+        console.log(chalk.green('3270 -> HOST'), chalk.red(error.message));
+        observer.error(error);
+      });
+      this.socket.on('end', () => {
+        console.log(chalk.green('3270 -> HOST'), chalk.cyan('Disconnected'));
+        observer.complete();
+      });
       this.socket.setNoDelay(true);
       this.socket.connect({host, port}, () => {
         console.log(chalk.green('3270 -> HOST'), chalk.blue(`Connected at ${host}:${port}`));
