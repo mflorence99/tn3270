@@ -1,4 +1,4 @@
-import { Tn3270 } from './';
+import { Tn3270 } from './tn3270';
 
 const tn3270 = new Tn3270('localhost', 3270, 'IBM-3278-4-E');
 const connection = tn3270.stream$.subscribe({

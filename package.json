@@ -21,10 +21,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "test-convert": "tsc && node lib/convert.spec.js",
-    "test-data-stream": "tsc && node lib/data-stream.spec.js",
-    "test-tn3270": "tsc && node lib/tn3270.spec.js",
-    "test-lu3270": "tsc && node lib/lu3270.spec.js",
+    "test": "tsc && node lib/tn3270.spec.js",
     "tsc": "tsc"
   },
   "repository": {

@@ -1,7 +1,5 @@
 import * as net from 'net';
 
-import { Telnet, reverseMap } from './data-stream';
-
 import { Observable } from 'rxjs/Observable';
 import { Observer } from 'rxjs/Observer';
 
@@ -94,6 +92,13 @@ enum Telnet {
   TERMINAL_TYPE = 24,
   WILL          = 251,
   WONT          = 252
+}
+
+function reverseMap(obj: any): any {
+  return Object.keys(obj).reduce((acc, k) => {
+    acc[String(obj[k])] = k;
+    return acc;
+  }, {});
 }
 
 class Negotiator {
