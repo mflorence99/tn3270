@@ -83,6 +83,19 @@ export class Tn3270 {
  * Negotiate Telnet connection 3270 <-> Host
  */
 
+enum Telnet {
+  BINARY        = 0,
+  DO            = 253,
+  DONT          = 254,
+  EOR           = 25,
+  IAC           = 255,
+  SB            = 250,
+  SE            = 240,
+  TERMINAL_TYPE = 24,
+  WILL          = 251,
+  WONT          = 252
+}
+
 class Negotiator {
 
   private static lookup = {

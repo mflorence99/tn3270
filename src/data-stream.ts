@@ -249,19 +249,6 @@ export enum Order {
   GE  = 0x08
 }
 
-export enum Telnet {
-  BINARY        = 0,
-  DO            = 253,
-  DONT          = 254,
-  EOR           = 25,
-  IAC           = 255,
-  SB            = 250,
-  SE            = 240,
-  TERMINAL_TYPE = 24,
-  WILL          = 251,
-  WONT          = 252
-}
-
 export enum TypeCode {
   BASIC     = 0xC0,
   HIGHLIGHT = 0x41,
