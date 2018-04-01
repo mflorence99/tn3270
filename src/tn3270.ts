@@ -94,13 +94,6 @@ enum Telnet {
   WONT          = 252
 }
 
-function reverseMap(obj: any): any {
-  return Object.keys(obj).reduce((acc, k) => {
-    acc[String(obj[k])] = k;
-    return acc;
-  }, {});
-}
-
 class Negotiator {
 
   private static lookup = {
@@ -116,7 +109,11 @@ class Negotiator {
     'WONT': Telnet.WONT
   };
 
-  private static reverse = reverseMap(Negotiator.lookup);
+  private static reverse = Object.keys(Negotiator.lookup)
+    .reduce((acc, k) => {
+      acc[String(Negotiator.lookup[k])] = k;
+      return acc;
+    }, {});
 
   /** ctor */
   constructor(private data: Buffer) { }
