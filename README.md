@@ -28,12 +28,12 @@ export declare class Tn3270 {
     port: number;
     model: string;
     stream$: Observable<Buffer>;
-    private socket;
     constructor(host: string, port: number, model: string);
     write(bytes: any): void;
-    private dataHandler(data, observer);
 }
 ```
+
+> `write` accepts either an array of bytes or a Node.js `Buffer`.
 
 > tn3270 has a dependency on [RxJS](http://reactivex.io/rxjs/) v5. I'll update tn3270 once v6 is released.
 
