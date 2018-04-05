@@ -13,6 +13,12 @@ These two documents explain the protocol exhaustively.
 
 I also found [this summary](http://users.cs.cf.ac.uk/Dave.Marshall/Internet/node141.html) of Telnet commands by Dave Marshall very helpful.
 
+## Installation
+
+```
+npm install --save ellib
+```
+
 ## API
 
 tn3270 negotiates a session with the host and if successful returns an `Observable` stream of data from the host to the emulator. A `write` API supports data transfer from the emulator back to the host.
