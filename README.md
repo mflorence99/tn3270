@@ -2,7 +2,7 @@
 
 tn3270 is a pure TypeScript implementation of the Telnet protocol necessary to negotiate a connection from a software 3270 emulator and a host that accepts 3270 connections.
 
-I use tn3270 as the basis for my own 3270 emulator [EL-3270](https://github.com/mflorence99/el-3270). I factored out the connection code to better expose it fir others to use in their own emulators. I hooe that it also exposes the protocol in an easy to understand way.
+I use tn3270 as the basis for my own 3270 emulator [EL-3270](https://github.com/mflorence99/el-3270). I factored out the connection code to better expose it for others to use in their own emulators. I hope that it also exposes the protocol in an easy to understand way.
 
 ## References
 
@@ -30,12 +30,12 @@ Because the API surface is so small, I've reproduced it here in full.
 ```typescript
 import { Observable } from 'rxjs/Observable';
 export declare class Tn3270 {
-    host: string;
-    port: number;
-    model: string;
-    stream$: Observable<Buffer>;
-    constructor(host: string, port: number, model: string);
-    write(bytes: any): void;
+  host: string;
+  port: number;
+  model: string;
+  stream$: Observable<Buffer>;
+  constructor(host: string, port: number, model: string);
+  write(bytes: any): void;
 }
 ```
 
@@ -70,7 +70,7 @@ ipcMain.on('connect', (event: any,
 
 ## 3270 Font
 
-Many thanks to Ricardo Bánffy for his [3270 Font](https://github.com/rbanffy/3270font), republished here for convenience. I actually grabbed the TTF versions from the S3 bucket <http://s3.amazonaws.com/3270font/3270_fonts_b3b4b7d.zip> Ricardo references.
+Many thanks to Ricardo Bánffy for his [3270 Font](https://github.com/rbanffy/3270font), republished here for convenience. I actually grabbed the TTF versions from the S3 bucket <http://s3.amazonaws.com/3270font/3270_fonts_b3b4b7d.zip> that Ricardo references.
 
 The 3270 font can be included in your app simply via the `fonts/3270.css` file. Here's how I use it in my Angular CLI projects, just like any other font in `.angular-cli.json`.
 
