@@ -4,6 +4,16 @@ tn3270 is a pure TypeScript implementation of the Telnet protocol necessary to n
 
 I use tn3270 as the basis for my own 3270 emulator [EL-3270](https://github.com/mflorence99/el-3270). I factored out the connection code to better expose it for others to use in their own emulators. I hope that it also exposes the protocol in an easy to understand way.
 
+<!-- toc -->
+
+- [References](#references)
+- [Installation](#installation)
+- [API](#api)
+  * [Example](#example)
+- [3270 Font](#3270-font)
+
+<!-- tocstop -->
+
 ## References
 
 These two documents explain the protocol exhaustively.

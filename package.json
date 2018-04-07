@@ -16,12 +16,15 @@
   "devDependencies": {
     "@types/node": "^9.6.0",
     "eslint": "^4.19.1",
+    "markdown-toc": "^1.2.0",
     "tslint": "^5.9.1",
     "typescript": "^2.7.2"
   },
   "scripts": {
     "build": "tsc",
+    "markdown-toc": "markdown-toc",
     "test": "tsc && node lib/tn3270.spec.js",
+    "toc": "markdown-toc -i README.md",
     "tsc": "tsc"
   },
   "repository": {
