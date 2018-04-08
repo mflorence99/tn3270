@@ -113,7 +113,7 @@ class Negotiator {
     .reduce((acc, k) => {
       acc[String(Negotiator.lookup[k])] = k;
       return acc;
-    }, {});
+    }, { });
 
   /** ctor */
   constructor(private data: Buffer) { }
