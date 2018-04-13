@@ -1,5 +1,6 @@
 npm run build
 git add publish.sh
+git add fonts/*
 git add src/*
 git commit -m "Prepare to publish"
 git push origin master
