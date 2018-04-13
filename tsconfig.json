@@ -7,7 +7,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "noUnusedLocals": true,
-    "outDir": "lib",
+    "outDir": "./dist",
     "removeComments": true,
     "rootDir": "src",
     "strictNullChecks": true,
