@@ -10,24 +10,21 @@
   "engine": "node >= 6.9.1",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^2.3.2",
-    "rxjs": "^5.5.7"
+    "chalk": "2",
+    "rxjs": "6"
   },
   "devDependencies": {
-    "@types/node": "^9.6.0",
-    "eslint": "^4.19.1",
-    "markdown-toc": "^1.2.0",
-    "rimraf": "^2.6.2",
-    "tslint": "^5.9.1",
-    "typescript": "^2.7.2"
+    "@types/node": "10",
+    "eslint": "4",
+    "markdown-toc": "1",
+    "rimraf": "2",
+    "tslint": "5",
+    "typescript": "2"
   },
   "scripts": {
     "build": "rimraf dist && tsc",
-    "markdown-toc": "markdown-toc",
-    "rimraf": "rimraf",
-    "test": "tsc && node lib/tn3270.spec.js",
-    "toc": "markdown-toc -i README.md",
-    "tsc": "tsc"
+    "test": "tsc && node dist/tn3270.spec.js",
+    "toc": "markdown-toc -i README.md"
   },
   "repository": {
     "type": "git",
