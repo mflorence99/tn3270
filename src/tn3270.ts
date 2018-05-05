@@ -1,7 +1,6 @@
 import * as net from 'net';
 
-import { Observable } from 'rxjs/Observable';
-import { Observer } from 'rxjs/Observer';
+import { Observable, Observer } from 'rxjs';
 
 const chalk = require('chalk');
 
