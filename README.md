@@ -26,7 +26,7 @@ I also found [this summary](http://users.cs.cf.ac.uk/Dave.Marshall/Internet/node
 ## Installation
 
 ```
-npm install --save ellib
+npm install --save tn3270
 ```
 
 ## API
