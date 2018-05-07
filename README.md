@@ -51,8 +51,6 @@ export declare class Tn3270 {
 
 > `write` accepts either an array of bytes or a Node.js `Buffer`.
 
-> tn3270 has a dependency on [RxJS](http://reactivex.io/rxjs/) v5. I'll update tn3270 once v6 is released.
-
 ### Example
 
 Here's how I use tn3270 in my Electron 3270 emulator.
