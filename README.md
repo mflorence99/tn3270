@@ -56,7 +56,7 @@ export declare class Tn3270 {
 Here's how I use tn3270 in my Electron 3270 emulator.
 
 ```typescript
-import { Tn3270 } from 'tn3270/lib/tn3270';
+import { Tn3270 } from 'tn3270';
 
 ipcMain.on('connect', (event: any,
                        host: string,
