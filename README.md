@@ -78,7 +78,7 @@ ipcMain.on('connect', (event: any,
 
 ## 3270 Font
 
-Many thanks to Ricardo Bánffy for his [3270 Font](https://github.com/rbanffy/3270font), republished here for convenience. I actually grabbed the TTF versions from the S3 bucket <http://s3.amazonaws.com/3270font/3270_fonts_b3b4b7d.zip> that Ricardo references.
+Many thanks to Ricardo Bánffy for his [3270 Font](https://github.com/rbanffy/3270font), republished here for convenience. I actually grabbed the TTF versions from the S3 bucket <https://s3.amazonaws.com/3270font/3270_fonts_4cfe95c.zip> that Ricardo references.
 
 The 3270 font can be included in your app simply via the `fonts/3270.css` file. Here's how I use it in my Angular CLI projects, just like any other font in `angular.json`.
 
