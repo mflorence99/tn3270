@@ -15,14 +15,15 @@
   },
   "devDependencies": {
     "@types/node": "10",
-    "eslint": "4",
+    "eslint": "5",
     "markdown-toc": "1",
     "rimraf": "2",
     "tslint": "5",
-    "typescript": "2"
+    "typescript": "3"
   },
   "scripts": {
     "build": "rimraf dist && tsc",
+    "clean": "rm -rf node_modules && rm package-lock.json && npm install",
     "test": "tsc && node dist/tn3270.spec.js",
     "toc": "markdown-toc -i README.md"
   },
